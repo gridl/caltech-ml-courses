@@ -1,0 +1,27 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+
+<!-- Define blank plots for every metric -->
+<div id="plot_div" style="width:90%;height:250px;"></div>
+
+<script>
+    plot_div = document.getElementById('plot_div');
+    var trace_10 = {
+        x: [1, 2, 3, 4, 5],
+        y: [1, 2, 4, 8, 16],
+        name: "Some name"
+    };
+    var trace_20 = {
+        x: [1, 2, 3, 4, 5],
+        y: [2, 4, 8, 16, 18],
+        name: "another name"
+    };
+    var plot_params = {
+        // margin: {t: 100},
+        title: "some title"
+    }
+    Plotly.plot(plot_div, [trace_10, trace_20], plot_params)
+</script>

@@ -1,0 +1,19 @@
+images resized to 64x64
+validation set - 20 first images from each class
+
+FC1
+# model = torch.nn.Sequential(
+#     torch.nn.Linear(64 * 64 * 3, 1024),
+#     torch.nn.sigmoid(),
+#     torch.nn.Linear(1024, 512),
+#     torch.nn.sigmoid(),
+#     torch.nn.Linear(512, 257)
+# )
+lr = 0.0005
+Epoch: 99, loss: 1.7891542533496478, acc: 0.5787576730303542, time per epoch: 0:00:20.705822
+Epoch: 99, loss: 6.859591921288173, acc: 0.09922178988326848, time per epoch: 0:00:05.924011
+kaggle = 0.10428
+
+
+model 3 run 2
+0.17135
